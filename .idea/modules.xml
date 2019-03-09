@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/tomcat.iml" filepath="$PROJECT_DIR$/.idea/tomcat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-tomcat-8.0.53/tomcat-8.0.x.iml" filepath="$PROJECT_DIR$/apache-tomcat-8.0.53/tomcat-8.0.x.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-tomcat-8.5.27/tomcat-8.5.x.iml" filepath="$PROJECT_DIR$/apache-tomcat-8.5.27/tomcat-8.5.x.iml" />
     </modules>
   </component>
 </project>
