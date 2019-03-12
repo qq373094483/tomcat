@@ -82,7 +82,7 @@ trydownload.httpusecaches=true
 # Please note this path must be absolute, not relative,
 # as it is referenced with different working directory
 # contexts by the various build scripts.
-base.path=e:/apache-tomcat-8.5.27/repository
+base.path=E:/apache-tomcat-8.5.27/repository
 
 compile.debug=true
 

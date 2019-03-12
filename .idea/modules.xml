@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/apache-tomcat-8.0.53/tomcat-8.0.x.iml" filepath="$PROJECT_DIR$/apache-tomcat-8.0.53/tomcat-8.0.x.iml" />
       <module fileurl="file://$PROJECT_DIR$/apache-tomcat-8.5.27/tomcat-8.5.x.iml" filepath="$PROJECT_DIR$/apache-tomcat-8.5.27/tomcat-8.5.x.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-tomcat-8.5.27/tomcat-8.5.x.iml" filepath="$PROJECT_DIR$/apache-tomcat-8.5.27/tomcat-8.5.x.iml" />
     </modules>
   </component>
 </project>

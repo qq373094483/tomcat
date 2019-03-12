@@ -1,0 +1,20 @@
+// ------------------------------------------------------------------
+// NOTICE file corresponding to the section 4d of The Apache License,
+// Version 2.0, in this case for EasyMock
+// ------------------------------------------------------------------
+
+EasyMock
+Copyright 2001-2013 OFFIS, Tammo Freese, Henri Tremblay
+
+This product includes/uses software(s) developed by 'an unknown organization'
+  - Code Generation Library (http://cglib.sourceforge.net/)
+  - dexmaker (http://code.google.com/p/dexmaker/dexmaker)
+  - Hamcrest Core (https://github.com/hamcrest/JavaHamcrest/hamcrest-core)
+
+This product includes/uses software(s) developed by 'Joe Walnes, Henri Tremblay, Leonardo Mesquita'
+  - Objenesis (http://objenesis.org)
+
+This product includes/uses software(s) developed by 'JUnit' (http://www.junit.org)
+  - JUnit (http://junit.org)
+
+

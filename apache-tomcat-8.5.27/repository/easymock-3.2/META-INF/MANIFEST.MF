@@ -1,0 +1,33 @@
+Manifest-Version: 1.0
+Export-Package: org.easymock.internal;poweruser=true;mandatory:=poweru
+ ser;uses:="org.easymock,net.sf.cglib.core,net.sf.cglib.proxy,org.easy
+ mock.internal.matchers,org.objenesis";version="3.2.0",org.easymock.in
+ ternal.matchers;poweruser=true;mandatory:=poweruser;uses:="org.easymo
+ ck,org.easymock.internal";version="3.2.0",org.easymock;uses:="org.eas
+ ymock.internal,org.easymock.internal.matchers";version="3.2.0"
+Implementation-Title: EasyMock
+Implementation-Version: 3.2
+Specification-Vendor: OFFIS, Tammo Freese, Henri Tremblay
+Built-By: Henri
+Tool: Bnd-1.43.0
+Bundle-Name: EasyMock
+Created-By: Apache Maven Bundle Plugin
+Bundle-Vendor: OFFIS, Tammo Freese, Henri Tremblay
+Implementation-Vendor: OFFIS, Tammo Freese, Henri Tremblay
+Implementation-Vendor-Id: org.easymock
+Bundle-Version: 3.2.0
+Build-Jdk: 1.7.0_25
+Bnd-LastModified: 1373493958689
+Bundle-ManifestVersion: 2
+Specification-Title: EasyMock
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-Description: EasyMock provides an easy way to create Mock Objec
+ ts for interfaces and classes generating them on the fly
+Import-Package: net.sf.cglib.core;resolution:=optional,net.sf.cglib.pr
+ oxy;resolution:=optional,net.sf.cglib.reflect;resolution:=optional,or
+ g.easymock,org.easymock.internal;poweruser=true,org.objenesis;resolut
+ ion:=optional;version="[1.3,2)"
+Bundle-SymbolicName: org.easymock
+Specification-Version: 3.2
+Archiver-Version: Plexus Archiver
+
