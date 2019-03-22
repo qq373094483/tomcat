@@ -21,10 +21,11 @@ import java.util.concurrent.Executor;
 
 
 /**
+ * 每个ProtocolHandler，代表着对一种协议的支持，比如tomcat默认支持的协议有http1.1和ajp。根据支持的协议，ProtocolHandler里面通常包含了一个实现对应协议的Handler接口的处理类，用于接收socket对象，再交给对应协议的Processor类（然而这个Processor类没有实现Processor接口，而是实现了ActionHook接口），最后由Processor类交给实现了Adapter接口的容器（准确的说是该容器的Pipeline的第一个Valve）
  * Abstract the protocol implementation, including threading, etc.
  * Processor is single threaded and specific to stream-based protocols,
  * will not fit Jk protocols like JNI.
- *
+ * <p>
  * This is the main interface to be implemented by a coyote connector.
  * Adapter is the main interface to be implemented by a coyote servlet
  * container.
@@ -39,6 +40,7 @@ public interface ProtocolHandler {
      * The adapter, used to call the connector.
      */
     public void setAdapter(Adapter adapter);
+
     public Adapter getAdapter();
 
 

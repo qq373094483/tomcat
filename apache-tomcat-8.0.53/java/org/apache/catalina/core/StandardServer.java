@@ -835,7 +835,7 @@ public final class StandardServer extends LifecycleMBeanBase implements Server {
         factory.setContainer(this);
         onameMBeanFactory = register(factory, "type=MBeanFactory");
 
-        // Register the naming resources
+        // Register the naming resources.org.apache.catalina.deploy.NamingResourcesImpl
         globalNamingResources.init();
 
         // Populate the extension validator with JARs from common and shared

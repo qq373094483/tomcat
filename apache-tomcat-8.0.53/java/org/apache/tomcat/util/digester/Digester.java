@@ -1444,8 +1444,9 @@ public class Digester extends DefaultHandler2 {
      * @exception SAXException if a parsing exception occurs
      */
     public Object parse(InputSource input) throws IOException, SAXException {
-
+        //检查是否已经有配置过服务器，如果没有，设置成已配置，并初始化当前类的Log类
         configure();
+        //解析server.xml或server-embed.xml配置文件
         getXMLReader().parse(input);
         return (root);
 

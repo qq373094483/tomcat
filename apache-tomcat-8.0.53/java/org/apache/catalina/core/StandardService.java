@@ -547,6 +547,7 @@ public class StandardService extends LifecycleMBeanBase implements Service {
         super.initInternal();
 
         if (container != null) {
+            //StandardEngine
             container.init();
         }
 

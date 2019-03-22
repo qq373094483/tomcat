@@ -13,6 +13,7 @@
  *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
+ *  这个接口已经废弃了，通常tomcat的Processor实现类实现的接口是ActionHook。你会看到许多名为“XXXProcessor”的类，但其实他们实现的接口却是ActionHook
  */
 package org.apache.coyote;
 

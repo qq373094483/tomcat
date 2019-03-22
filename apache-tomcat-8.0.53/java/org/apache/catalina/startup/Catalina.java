@@ -171,6 +171,10 @@ public class Catalina {
         return ClassLoader.getSystemClassLoader();
     }
 
+    /**
+     * 在catalina.load阶段，使用digester.parse解析配置文件时将解析的xml配置好。
+     * @param server
+     */
     public void setServer(Server server) {
         this.server = server;
     }
@@ -503,7 +507,7 @@ public class Catalina {
 
         // Create and execute our Digester. 定义解析server.xml的配置，告诉Digester哪个xml标签应该解析成什么类
         Digester digester = createStartDigester();
-
+        //当您使用 SAX API 时，所有输入都从使用 org.xml.sax.InputSource 类开始
         InputSource inputSource = null;
         InputStream inputStream = null;
         File file = null;
@@ -567,6 +571,7 @@ public class Catalina {
             }
 
             try {
+                //将文件输入流放到inputSource，准备开始解析XML
                 inputSource.setByteStream(inputStream);
                 //// 把Catalina作为一个顶级实例
                 digester.push(this);

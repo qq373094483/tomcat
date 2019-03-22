@@ -98,8 +98,10 @@ public abstract class LifecycleBase implements Lifecycle {
         }
 
         try {
+            //触发INITIALIZING事件
             setStateInternal(LifecycleState.INITIALIZING, null, false);
             initInternal();
+            //触发INITIALIZED事件
             setStateInternal(LifecycleState.INITIALIZED, null, false);
         } catch (Throwable t) {
             ExceptionUtils.handleThrowable(t);

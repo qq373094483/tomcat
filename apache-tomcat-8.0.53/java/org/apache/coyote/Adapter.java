@@ -19,6 +19,7 @@ package org.apache.coyote;
 import org.apache.tomcat.util.net.SocketStatus;
 
 /**
+ * “适配器”在这里的意思，是指“凡是使用coyote连接器的容器，都要实现这个接口，以便从coyote连接器接收请求和响应数据”，当然这里的请求和响应是org.apache.coyote.Request和Response
  * Adapter. This represents the entry point in a coyote-based servlet container.
  *
  *
