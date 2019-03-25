@@ -131,10 +131,11 @@
                 <Realm className="org.apache.catalina.realm.UserDatabaseRealm"
                        resourceName="UserDatabase"/>
             </Realm>
-            <!--代表一个Virtual Host，虚拟主机，每个虚拟主机和某个网络域名Domain Name相匹配每个虚拟主机下都可以部署(deploy)一个或者多个Web App，每个Web App对应于一个Context，有一个Context path当Host获得一个请求时，将把该请求匹配到某个Context上，然后把该请求交给该Context来处理匹配的方法是“最长匹配”，所以一个path==”"的Context将成为该Host的默认Context所有无法和其它Context的路径名匹配的请求都将最终和该默认Context匹配
+            <!--代表一个Virtual Host，虚拟主机，每个虚拟主机和某个网络域名Domain Name相匹配每个虚拟主机下都可以部署(deploy)一个或者多个Web App，每个Web App对应于一个Context，
+            有一个Context path当Host获得一个请求时，将把该请求匹配到某个Context上，然后把该请求交给该Context来处理匹配的方法是“最长匹配”，所以一个path==”"的Context将成为
+            该Host的默认Context所有无法和其它Context的路径名匹配的请求都将最终和该默认Context匹配
 
             Host表示一个虚拟主机，一个引擎可以包含多个Host。用户通常不需要创建自定义的Host，因为Tomcat给出的Host接口的实现（类StandardHost）提供了重要的附加功能。
-            -->
             -->
             <Host name="localhost" appBase="webapps"
                   unpackWARs="true" autoDeploy="true">
