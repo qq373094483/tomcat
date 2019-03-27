@@ -542,7 +542,7 @@ public class StandardContext extends ContainerBase
 
     /**
      * The servlet mappings for this web application, keyed by
-     * matching pattern.
+     * matching pattern.存放匹配模式和servlet名称（servlet-name）
      */
     private HashMap<String, String> servletMappings = new HashMap<>();
 
@@ -3221,7 +3221,12 @@ public class StandardContext extends ContainerBase
         addServletMappingDecoded(pattern, name, false);
     }
 
-
+    /**
+     * 建立路径匹配模式与servlet-name的映射
+     * @param pattern URL pattern to be mapped
+     * @param name Name of the corresponding servlet to execute
+     * @param jspWildCard
+     */
     @Override
     public void addServletMappingDecoded(String pattern, String name,
                                   boolean jspWildCard) {

@@ -161,6 +161,7 @@ public abstract class ContainerBase extends LifecycleMBeanBase
 
 
     /**
+     * key为servlet名称，container为servlet的包装器(standardWrapper)
      * The child Containers belonging to this Container, keyed by name.
      */
     protected final HashMap<String, Container> children = new HashMap<>();
